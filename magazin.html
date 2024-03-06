@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarsikVape</title>
+
+    <script>
+        // Перемикач для випадаючого меню
+function toggleMenu() {
+  var dropdownMenu = document.getElementById("myDropdown");
+  dropdownMenu.classList.toggle("show");
+}
+
+// Закриття меню, якщо користувач клікне за межами меню
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    for (var i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+    </script>
+
+
+    <style>
+        body {
+            background-image: url('images/зорі.jpg');
+            background-size: cover;
+        }
+        body aside {
+            top: 0px;
+            left: 0px;
+            position: fixed;
+            width: 125px;
+            height: 900px;
+            background-color: rgba(0, 0, 0, 0.6);
+            
+
+        }
+        body aside img {
+            width: 80px;
+            margin-left: 20px;
+        }
+        body aside p {
+            
+            margin-left: 0px;
+            border: none;
+            font-size: 22px;
+            text-align: center;
+            
+        }
+        body aside a {
+            text-decoration: none;
+            color: rgb(64, 224, 208);
+        }
+        body aside div1 {
+            margin-top: 550px;
+            display: flex;
+        }
+        body aside div1 img {
+            width: 80px;
+        }
+        
+    .smoke {
+           position: absolute;
+           width: 100px;
+           height: 100px;
+           background-color: #ccc;
+           opacity: 0.5;
+           border-radius: 50%;
+           animation: smokeAnimation 5s infinite ease-in-out alternate;
+    }
+
+@keyframes smokeAnimation {
+    0% {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+    50% {
+        transform: scale(1.5);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+body div {
+    display: inline-block;
+    margin-left: 220px;
+    margin-bottom: 30px;
+}
+
+body p {
+    font-size: 20px;
+    color: rgb(224, 16, 220);
+    margin-left: 10px;
+    text-align: center;
+}
+
+.order-buttons {
+    padding: 10px 20px; /* Розміри кнопок */
+     /* Відступ між кнопками */
+    text-decoration: none;
+    color: rgb(64, 224, 208);
+    background-color: #000000; /* Колір кнопок */
+    border: none;
+    border-radius: 5px; /* Закруглені кути */
+    cursor: pointer;
+    margin-left: 70px; 
+}
+body header h1 {
+    text-align: center;
+    color: rgb(64, 224, 208);
+    margin-left: 90px;
+}
+body header {
+    margin-bottom: 70px;
+    margin-top: 70px;
+}
+
+body .pod img {
+   margin-left: 100px;
+}
+body .pod1 img {
+   margin-left: 100px;
+}
+body .pod2 img {
+   margin-left: 100px;
+}
+body .pod3 img {
+   margin-left: 100px;
+}
+body .pod4 img {
+   margin-left: 100px;
+}
+body .pod p {
+   margin-left: 90px;
+}
+body .pod1 p {
+   margin-left: 90px;
+}
+body .pod2 p {
+   margin-left: 90px;
+}
+body .pod3 p {
+   margin-left: 90px;
+}
+body .pod4 p {
+   margin-left: 90px;
+}
+
+.order-buttons1 {
+    padding: 10px 20px; /* Розміри кнопок */
+     /* Відступ між кнопками */
+    text-decoration: none;
+    color: rgb(64, 224, 208);
+    background-color: #000000; /* Колір кнопок */
+    border: none;
+    border-radius: 5px; /* Закруглені кути */
+    cursor: pointer;
+    margin-left: 90px; 
+}
+.order-buttons2 {
+    padding: 10px 20px; /* Розміри кнопок */
+     /* Відступ між кнопками */
+    text-decoration: none;
+    color: rgb(64, 224, 208);
+    background-color: #000000; /* Колір кнопок */
+    border: none;
+    border-radius: 5px; /* Закруглені кути */
+    cursor: pointer;
+    margin-left: 100px; 
+}
+.order-buttons3 {
+    padding: 10px 20px; /* Розміри кнопок */
+     /* Відступ між кнопками */
+    text-decoration: none;
+    color: rgb(64, 224, 208);
+    background-color: #000000; /* Колір кнопок */
+    border: none;
+    border-radius: 5px; /* Закруглені кути */
+    cursor: pointer;
+    margin-left: 100px; 
+}
+.order-buttons4 {
+    padding: 10px 20px; /* Розміри кнопок */
+     /* Відступ між кнопками */
+    text-decoration: none;
+    color: rgb(64, 224, 208);
+    background-color: #000000; /* Колір кнопок */
+    border: none;
+    border-radius: 5px; /* Закруглені кути */
+    cursor: pointer;
+    margin-left: 100px; 
+}
+.order-buttons5 {
+    padding: 10px 20px; /* Розміри кнопок */
+     /* Відступ між кнопками */
+    text-decoration: none;
+    color: rgb(64, 224, 208);
+    background-color: #000000; /* Колір кнопок */
+    border: none;
+    border-radius: 5px; /* Закруглені кути */
+    cursor: pointer;
+    margin-left: 100px; 
+}
+
+    </style>
+
+</head>
+<body>
+    <aside>
+        <img src="images/logo.jpg" alt="Логотип">
+        <p><a href="index.html">Головна</a></p>
+        <p><a href="index.html">Магазин</a></p>
+        <p><a href="contacts.html">Контакти</a></p>
+        <div1 class="smoke"></div1>
+        <div1><img src="images/інопланетянин.jpg"></div1>
+    </aside>
+
+    <header>
+        <h1>Рідина ElixLab в асортименті</h1>
+    </header>
+
+    <div class="photo-container">
+        <img src="images/суниця.png">
+        <p>Ціна</p>
+        <p>30ml-280грн</p>
+        <a href="contacts.html" class="order-buttons">Замовити</a>
+        </div>
+
+    <div class="photo-container1">    
+        <img src="images/банан.png">
+        <p>Ціна</p>
+        <p>30ml-280грн</p>
+        <a href="contacts.html" class="order-buttons">Замовити</a>
+    </div>
+
+    <div class="photo-container2">
+        <img src="images/груша.png">
+        <p>Ціна</p>
+        <p>30ml-280грн</p>
+        <a href="contacts.html" class="order-buttons">Замовити</a>
+    </div>
+
+    <div class="photo-container3">
+        <img src="images/лічі.png">
+        <p>Ціна</p>
+        <p>30ml-280грн</p>
+        <a href="contacts.html" class="order-buttons">Замовити</a>
+    </div>
+
+    <div class="photo-container4">
+        <img src="images/нектарин.png">
+        <p>Ціна</p>
+        <p>30ml-280грн</p>
+        <a href="contacts.html" class="order-buttons">Замовити</a>
+    </div>
+
+    <div class="photo-container5">
+        <img src="images/смородина.png">
+        <p>Ціна</p>
+        <p>30ml-280грн</p>
+        <a href="contacts.html" class="order-buttons">Замовити</a>
+    </div>
+
+    <div class="photo-container6">
+        <img src="images/черешня.png">
+        <p>Ціна</p>
+        <p>30ml-280грн</p>
+        <a href="contacts.html" class="order-buttons">Замовити</a>
+    </div>
+
+    <div class="photo-container7">
+        <img src="images/ягоди.png">
+        <p>Ціна</p>
+        <p>30ml-280грн</p>
+        <a href="contacts.html" class="order-buttons">Замовити</a>
+    </div>
+
+    <header>
+        <h1>Pod-Системи</h1>
+    </header>
+   <div class="pod">
+       <img src="images/black-removebg-preview.png">
+       <p>Black</p>
+       <p>750грн</p>
+       <a href="contacts.html" class="order-buttons1">Замовити</a>
+   </div>
+
+   <div class="pod1">
+    <img src="images/blue-removebg-preview.png">
+    <p>Blue</p>
+    <p>750грн</p>
+    <a href="contacts.html" class="order-buttons2">Замовити</a>
+</div>
+
+<div class="pod2">
+    <img src="images/silver-removebg-preview.png">
+    <p>Silver</p>
+    <p>750грн</p>
+    <a href="contacts.html" class="order-buttons3">Замовити</a>
+</div>
+
+<div class="pod3">
+    <img src="images/skyblue-removebg-preview.png">
+    <p>SkyBlue</p>
+    <p>750грн</p>
+    <a href="contacts.html" class="order-buttons4">Замовити</a>
+</div>
+
+<div class="pod4">
+    <img src="images/pink-removebg-preview.png">
+    <p>Pink</p>
+    <p>750грн</p>
+    <a href="contacts.html" class="order-buttons5">Замовити</a>
+</div>
+
+    
+</body>
+</html>
